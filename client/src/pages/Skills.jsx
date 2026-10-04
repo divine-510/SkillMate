@@ -12,7 +12,7 @@ function Skills() {
 
   const fetchSkills = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/skills");
+      const response = await fetch("https://skillmate-lixb.onrender.com/api/skills");
       const data = await response.json();
 
       setSkills(data);
@@ -30,7 +30,7 @@ function Skills() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/skills/add",
+        "https://skillmate-lixb.onrender.com/api/skills/add",
         {
           method: "POST",
           headers: {
@@ -144,7 +144,7 @@ function Skills() {
 
       try {
         const response = await fetch(
-          `http://localhost:5000/api/skills/${skill._id}`,
+          `https://skillmate-lixb.onrender.com/api/skills/${skill._id}`,
           {
             method: "PUT",
             headers: {
@@ -177,7 +177,7 @@ function Skills() {
   onClick={async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/requests/send",
+        "https://skillmate-lixb.onrender.com/api/requests/send",
         {
           method: "POST",
           headers: {

@@ -8,7 +8,7 @@ function Requests() {
   const fetchRequests = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/requests/received/${userId}`
+        `https://skillmate-lixb.onrender.com/api/requests/received/${userId}`
       );
 
       const data = await response.json();
@@ -60,7 +60,7 @@ function Requests() {
   onClick={async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/requests/${request._id}`,
+        `https://skillmate-lixb.onrender.com/api/requests/${request._id}`,
         {
           method: "PUT",
           headers: {
@@ -90,7 +90,7 @@ function Requests() {
   onClick={async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/requests/${request._id}`,
+        `https://skillmate-lixb.onrender.com/api/requests/${request._id}`,
         {
           method: "PUT",
           headers: {

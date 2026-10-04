@@ -10,7 +10,7 @@ function Profile() {
   const fetchProfile = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/profile/${userId}`
+        `https://skillmate-lixb.onrender.com/api/profile/${userId}`
       );
 
       const data = await response.json();
@@ -32,7 +32,7 @@ function Profile() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/profile/save",
+        "https://skillmate-lixb.onrender.com/api/profile/save",
         {
           method: "POST",
           headers: {

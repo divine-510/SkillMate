@@ -21,7 +21,7 @@ function Reviews() {
   const fetchReviews = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/reviews/${reviewedUserId}`
+        `https://skillmate-lixb.onrender.com/api/reviews/${reviewedUserId}`
       );
 
       const data = await response.json();
@@ -41,7 +41,7 @@ function Reviews() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/reviews/add",
+        "https://skillmate-lixb.onrender.com/api/reviews/add",
         {
           method: "POST",
           headers: {
